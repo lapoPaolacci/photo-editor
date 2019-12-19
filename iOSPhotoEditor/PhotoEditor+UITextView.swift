@@ -41,6 +41,7 @@ extension PhotoEditorViewController: UITextViewDelegate {
             else {
                 return
         }
+        doneButtonTapped(textView)
         activeTextView = nil
         textView.font = self.lastTextViewFont!
         UIView.animate(withDuration: 0.3,
